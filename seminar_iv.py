@@ -11,7 +11,6 @@ then q negative terms, and so on – and show numerically that the rearrangement
 
 
 # Imports Section
-import texttable
 import math
 
 
