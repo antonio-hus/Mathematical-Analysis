@@ -28,6 +28,7 @@ def lists_generator(limit: int) -> (list, list):
     return v_pos, v_neg
 
 
+# One Positive, One Negative Arrangement - Default Arrangement
 def one_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -41,6 +42,7 @@ def one_positive_one_negative_arrangement(limit: int) -> float:
     return s
 
 
+# Two Positive, Two Negative Arrangement - Slightly Modified Arrangement - No Effect
 def two_positive_two_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -61,6 +63,7 @@ def two_positive_two_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Positive, Two Negative Arrangement - Modified Arrangement
 def one_positive_two_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -79,6 +82,7 @@ def one_positive_two_negative_arrangement(limit: int) -> float:
     return s
 
 
+# Two Positive, One Negative Arrangement - Modified Arrangement
 def two_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -97,6 +101,7 @@ def two_positive_one_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Positive, Three Negative Arrangement - Modified Arrangement
 def one_positive_three_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -117,6 +122,7 @@ def one_positive_three_negative_arrangement(limit: int) -> float:
     return s
 
 
+# Three Positive, One Negative Arrangement - Modified Arrangement
 def three_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -137,6 +143,7 @@ def three_positive_one_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Positive, Five Negative Arrangement - Modified Arrangement
 def one_positive_five_negative_arrangement(limit: int) -> float:
     v_pos, v_neg = lists_generator(limit)
 
@@ -160,6 +167,7 @@ def one_positive_five_negative_arrangement(limit: int) -> float:
     return s
 
 
+# Five Positive, One Negative Arrangement - Modified Arrangement
 def five_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -184,6 +192,7 @@ def five_positive_one_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Positive, Twenty-Five Negative Arrangement - Modified Arrangement
 def one_positive_tf_negative_arrangement(limit: int) -> float:
     v_pos, v_neg = lists_generator(limit)
 
@@ -203,6 +212,7 @@ def one_positive_tf_negative_arrangement(limit: int) -> float:
     return s
 
 
+# Twenty-Five Positive, One Negative Arrangement - Modified Arrangement
 def tf_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -222,6 +232,7 @@ def tf_positive_one_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Positive, One Hundred Negative Arrangement - Modified Arrangement
 def one_positive_hun_negative_arrangement(limit: int) -> float:
     v_pos, v_neg = lists_generator(limit)
 
@@ -241,6 +252,7 @@ def one_positive_hun_negative_arrangement(limit: int) -> float:
     return s
 
 
+# One Hundred Positive, One Negative Arrangement - Modified Arrangement
 def hun_positive_one_negative_arrangement(limit: int) -> float:
 
     v_pos, v_neg = lists_generator(limit)
@@ -261,7 +273,6 @@ def hun_positive_one_negative_arrangement(limit: int) -> float:
 
 
 # Front End Section
-
 def generate_result_table(configuration: int):
     if configuration == 0:
         print()
