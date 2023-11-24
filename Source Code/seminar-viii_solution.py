@@ -11,7 +11,7 @@ def inside_unit_ball(point, p):
     return norm <= 1
 
 
-# Function to plot points inside the unit ball for various p-values in separate plots
+# Function to plot points inside the unit ball for p-values in separate plots
 def plot_unit_ball(p_values, num_points):
 
     # Iterate through each p-value
@@ -38,7 +38,7 @@ def plot_unit_ball(p_values, num_points):
 # Example usage:
 def main():
     p_values = [1.25, 1.5, 3, 8]
-    num_points = 10000
+    num_points = 100000
     plot_unit_ball(p_values, num_points)
 
 
