@@ -59,6 +59,11 @@ def start():
     b_values = [1/2, 1/5, 1/10]
     iterations = 50
 
+    """
+    As 'b' gets smaller we notice the enlargement of the level set ellipse on the y-axis
+    Also as 'b' gets smaller we need more steps to converge
+    """
+
     # Plotting for each b value
     for b in b_values:
         plt.figure()
