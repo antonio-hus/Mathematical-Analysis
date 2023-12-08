@@ -25,14 +25,12 @@ def gradient_descent(b, iterations):
     # Initial point - Change to anything
     x, y = -20, 19
 
-    # Finding the optimal learning rate - step size
-    learning_rate = exact_line_search(x, y, b)
-
     # Store the points for plotting
     points = [(x, y)]
 
     for i in range(iterations):
         grad = gradient_f(x, y, b)
+        learning_rate = exact_line_search(grad[0], grad[1], b)
         x -= learning_rate * grad[0]
         y -= learning_rate * grad[1]
         points.append((x, y))
@@ -61,7 +59,8 @@ def start():
 
     """
     As 'b' gets smaller we notice the enlargement of the level set ellipse on the y-axis
-    Also as 'b' gets smaller we need more steps to converge
+    Also as 'b' gets smaller the number of steps to converge does not increase or decrease significantly
+    Gradient Descent for this function is somewhat like a ln function ??
     """
 
     # Plotting for each b value
